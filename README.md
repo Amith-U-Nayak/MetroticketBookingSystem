@@ -1,6 +1,7 @@
 # Metro Ticket Booking System
 
 A web-based metro ticket booking system built with HTML, CSS, JavaScript, PHP, and MySQL using XAMPP.
+Based on https://github.com/HarshaMangipudi06/MetroTicketBookingSystem
 
 ## Features
 
