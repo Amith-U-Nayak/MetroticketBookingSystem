@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Metro Ticket Booking</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>🚇 Metro Ticket Booking</h1>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="map.html">Map</a>
+                <a href="booking.html">Book Ticket</a>
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="admin.html" id="adminLink" style="display: none;">Admin</a>
+                <a href="#" id="logoutLink" onclick="logout()">Logout</a>
+            </nav>
+        </header>
+
+        <main class="dashboard-container">
+            <h2>My Bookings</h2>
+            <div id="bookingsList" class="bookings-list">
+                <p>Loading bookings...</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro Map - Metro Ticket Booking</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>🚇 Metro Ticket Booking</h1>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="map.html" class="active">Map</a>
+                <a href="booking.html">Book Ticket</a>
+                <a href="login.html" id="loginLink">Login</a>
+                <a href="dashboard.html" id="dashboardLink" style="display: none;">Dashboard</a>
+                <a href="#" id="logoutLink" style="display: none;" onclick="logout()">Logout</a>
+            </nav>
+        </header>
+
+        <main class="map-container">
+            <h2>Metro Network Map</h2>
+            <div class="map-legend">
+                <h3>Hyderabad Metro Lines</h3>
+                <div class="legend-items">
+                    <span class="legend-item"><span class="legend-color" style="background: #0066cc;"></span> Blue Line (Nagole - Raidurg)</span>
+                    <span class="legend-item"><span class="legend-color" style="background: #cc0000;"></span> Red Line (L.B. Nagar - Miyapur)</span>
+                    <span class="legend-item"><span class="legend-color" style="background: #00cc00;"></span> Green Line (Falaknuma - Parade Ground)</span>
+                </div>
+                <p class="fare-info-text">Fare Range: ₹10 - ₹70</p>
+            </div>
+            <div class="metro-map" id="metroMap">
+                <!-- Show the user's static image only -->
+                <img 
+                    id="mapImage" 
+                    src="metro_map.jpg" 
+                    alt="Hyderabad Metro Route Map"
+                    style="max-width:100%; height:auto; border-radius:8px; display:block;" 
+                    onerror="this.onerror=null; this.src='metro_map.JPG';"
+                />
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/map.js"></script>
+</body>
+</html>
